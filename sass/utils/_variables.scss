@@ -1,0 +1,26 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --text-primary-color: rgba(117, 117, 117, 1);
+  --text-secondary-color: rgba(33, 33, 33, 1);
+  --accent-primary-color: rgba(255, 255, 255, 1);
+  --accent-secondary-color: rgba(33, 150, 243, 1);
+  --hero-button-accent-color: rgba(24, 140, 232, 1);
+  --hero-background-color: rgba(47, 48, 58, 1);
+  --accent-background-color: rgba(245, 244, 250, 1);
+  --box-shadow-color: rgba(0, 0, 0, 0.14);
+  --header-border-color: #ececec;
+  --portfolio-box-border: #eeeeee;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --icon-color: rgba(175, 177, 184, 1);
+  --icon-bgcolor: rgba(255, 255, 255, 0.1);
+  --overlay-gradient-color: rgba(47, 48, 58, 0.4);
+  --project-overlay: rgba(33, 150, 243, 0.9);
+  --product-overlay: rgba(47, 48, 58, 0.8);
+  --modal-overlay: rgba(0, 0, 0, 0.2);
+  --anima-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --calc-indent: 30px;
+  --calc-item-mobile: 1;
+  --calc-item-tablet: 2;
+  --calc-item-desctop: 3;
+}

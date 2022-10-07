@@ -1,0 +1,73 @@
+.section__instrument{
+    padding-bottom: 0;
+}
+.instrument{
+    @media screen and (min-width: 480px){
+        & .instrument__item{
+            width: 450px;
+            height: 226px;
+        }        
+    }
+
+    @media screen and (min-width: 768px){
+        & .instrument__item{
+            width: 354px;
+            height: 251px;
+        }        
+    }
+
+    @media screen and (min-width: 1200px) {
+        & .instrument__item{
+            width: 270px;
+            height: 251px;            
+        }
+
+        .instrument__item:last-child{
+            margin-right: 0;
+        }
+    }
+    
+}
+.instrument__list{    
+    gap: 30px;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 50%;        
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 100% / 4;
+        
+    }
+}
+
+.instrument__card{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--accent-background-color);
+}
+.instrument__icon{    
+    width: 70px;
+    height: 70px;    
+}
+.instrument__title{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-secondary-color);
+}
+.instruments__description{
+    margin-top: 10px;
+    line-height: 1.7;
+    color: var(--text-primary-color);
+}

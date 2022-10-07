@@ -1,0 +1,33 @@
+.filter {
+  margin-bottom: 50px;
+  gap: 8px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;        
+    }
+  }
+.filter__button {
+  align-content: center;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text-secondary-color);
+  background-color: var(--accent-background-color);
+  border-radius: 4px;
+  border: none;
+  transition: color var(--anima-timing), background-color var(--anima-timing),
+    box-shadow var(--anima-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+    background-color: var(--accent-secondary-color);
+    box-shadow: 0px 3px 1px var(--box-shadow-color),
+      0px 1px 2px var(--box-shadow-color), 0px 2px 2px var(--box-shadow-color);
+  }
+}

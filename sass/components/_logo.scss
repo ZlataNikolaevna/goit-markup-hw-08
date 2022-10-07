@@ -1,0 +1,14 @@
+.logo{
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--accent-secondary-color);
+}
+.logo__accent--header{
+    color: var(--text-secondary-color);
+}
+.logo__accent--footer{
+    color: var(--accent-primary-color);
+}

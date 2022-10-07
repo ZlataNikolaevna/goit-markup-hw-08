@@ -1,0 +1,101 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__item{    
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 404px;        
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 440px;        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 404px;        
+    }
+}
+.grid > .grid__item{
+    @media screen and (min-width: 480px){
+        flex-basis: calc(100%/var(--calc-item-mobile) - var(--calc-indent));
+    }
+
+    @media screen and (min-width: 768px){
+        flex-basis: calc(100%/var(--calc-item-tablet) - var(--calc-indent));
+    }
+
+    @media screen and (min-width: 1200px){
+        flex-basis: calc(100%/var(--calc-item-desctop) - var(--calc-indent));
+    }
+    
+}
+.grid__link{
+    display: block;
+    text-decoration: none;
+    transition: box-shadow var(--anima-timing); 
+    
+    &:hover,
+    &:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);;
+    }
+}
+.wraper{
+    position: relative; 
+    overflow: hidden;
+}
+.wraper__overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--project-overlay);
+    transform: translateY(100%);
+    transition: var(--anima-timing);
+    
+    .grid__link:hover &,
+    .grid__link:focus &{
+    transform: translateY(0);
+}
+}
+.wraper__description{
+    margin: 0;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--accent-primary-color);
+}
+.card{
+    padding: 20px 24px;
+    border-left: 1px solid var(--portfolio-box-border);
+    border-bottom: 1px solid var(--portfolio-box-border);
+    border-right: 1px solid var(--portfolio-box-border);
+}
+.card__title{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary-color)
+}
+.card__description{
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--text-primary-color);
+}
