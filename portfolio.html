@@ -35,7 +35,7 @@
             <li><a href="" class="link nav__item">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list nav">
+        <ul class="list nav contact">
           <li>
             <a href="mailto:info@example.com" class="link nav__contact">
               <svg width="16" height="12" class="nav__icon">
@@ -53,6 +53,44 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-btn js-open-menu">
+          <svg width="40" height="40" class="mobmenu__icon">
+            <use href="./images/icons-defs.svg#mobmenu"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" class="mobmenu__icon">
+              <use href="./images/icons-defs.svg#mobmenu-cross"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Студия</a>
+            </li>
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Портфолио</a>
+            </li>
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list mobmenu__media">
+            <li class="mobmenu__nav">
+              <a href="tel:+380991111111" class="link mobmenu__call">+38 096 111 11 11</a>
+            </li>
+            <li><a href="mailto:info@devstudio.com" class="link mobmenu__mail">info@devstudio.com</a></li>            
+          </ul>
+          <ul class="list mobmenu__soclink">
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Instagram</a></li>
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Twitter</a></li>
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Facebook</a></li>
+            <li class="last">
+              <a href="" class="link mobmenu__navlink">LinkedIn</a></li>
+          </ul>
       </div>
     </header>
     <main>
@@ -78,11 +116,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img8.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project1_L@1x_result.jpg 1x, ./images/project/project1_L@2x_result.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project1_M@1x_result.jpg 1x, ./images/project/project1_M@2x_result.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project1_S@1x_result.jpg 1x, ./images/project/project1_S@2x_result.jpg 2x">
+                    <img
+                      src="./images/project/project1_S@1x_result.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>                  
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -101,11 +143,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img9.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project2_L@1x.jpg 1x, ./images/project/project2_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project2_M@1x.jpg 1x, ./images/project/project2_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project2_S@1x.jpg 1x, ./images/project/project2_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project2_S@1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -124,11 +170,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img10.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project3_L@1x.jpg 1x, ./images/project/project3_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project3_M@1x.jpg 1x, ./images/project/project3_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project3_S@1x.jpg 1x, ./images/project/project3_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project3_S@1x.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -147,11 +197,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img11.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project4_L@1x.jpg 1x, ./images/project/project4_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project4_M@1x.jpg 1x, ./images/project/project4_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project4_S@1x.jpg 1x, ./images/project/project4_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project4_S@1x.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -170,11 +224,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img12.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project5_L@1x.jpg 1x, ./images/project/project5_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project5_M@1x.jpg 1x, ./images/project/project5_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project5_S@1x.jpg 1x, ./images/project/project5_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project5_S@1x.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -193,11 +251,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img13.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project6_L@1x.jpg 1x, ./images/project/project6_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project6_M@1x.jpg 1x, ./images/project/project6_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project6_S@1x.jpg 1x, ./images/project/project6_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project6_S@1x.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -216,11 +278,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img14.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project7_L@1x.jpg 1x, ./images/project/project7_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project7_M@1x.jpg 1x, ./images/project/project7_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project7_S@1x.jpg 1x, ./images/project/project7_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project7_S@1x.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -239,11 +305,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img15.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project8_L@1x.jpg 1x, ./images/project/project8_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project8_M@1x.jpg 1x, ./images/project/project8_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project8_S@1x.jpg 1x, ./images/project/project8_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project8_S@1x.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -262,11 +332,15 @@
             <li class="grid__item">
               <a href="" class="grid__link">
                 <div class="wraper">
-                  <img
-                    src="./images/project/img16.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/project/project9_L@1x.jpg 1x, ./images/project/project9_L@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/project/project9_M@1x.jpg 1x, ./images/project/project9_M@2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/project/project9_S@1x.jpg 1x, ./images/project/project9_S@2x.jpg 2x">
+                    <img
+                      src="./images/project/project9_S@1x.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="wraper__overlay">
                     <p class="wraper__description">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -395,5 +469,13 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

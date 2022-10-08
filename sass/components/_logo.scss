@@ -1,3 +1,11 @@
+.nav__logo{
+    @media screen and (max-width: 767.5px){
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    
+}
 .logo{
     font-family: var(--secondary-font);
     font-style: normal;

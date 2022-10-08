@@ -25,6 +25,7 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--accent-primary-color);
 
+  
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 622px;
@@ -35,12 +36,18 @@
     height: 536px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1120px) {
     width: 270px;
     height: 428px;
   }
 }
 
+.team__item{
+    @media screen and (max-width:1199.5px) {
+        margin-bottom: 30px; 
+      }
+  }
+  
 .specialist {
   padding: 30px;
   text-align: center;

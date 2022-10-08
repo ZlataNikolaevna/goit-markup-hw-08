@@ -43,7 +43,16 @@
         
     }
 }
-
+.instrument__item{
+    @media screen and (max-width:1199.5px) {
+        margin-bottom: 30px; 
+    }
+}
+.instrument__item:last-child{
+    @media screen and (max-width:1199.5px) {
+        margin-bottom: 60px; 
+    }
+}
 .instrument__card{
     height: 120px;
     display: flex;
@@ -65,6 +74,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--text-secondary-color);
+
+    @media screen and (max-width: 767.5px) {
+        text-align: center;        
+    }
 }
 .instruments__description{
     margin-top: 10px;

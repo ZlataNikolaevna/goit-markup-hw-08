@@ -22,9 +22,9 @@
     <header class="header">
       <div class="container container__nav">
         <a href="index.html" class="link logo nav__logo">
-            Web<span class="logo__accent--header">Studio</span></a
-          >
-        <nav>          
+          Web<span class="logo__accent--header">Studio</span></a
+        >
+        <nav>
           <ul class="list nav">
             <li>
               <a href="index.html" class="link nav__item current">Студия</a>
@@ -35,7 +35,7 @@
             <li><a href="" class="link nav__item">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list nav">
+        <ul class="list nav contact">
           <li>
             <a href="mailto:info@example.com" class="link nav__contact">
               <svg width="16" height="12" class="nav__icon">
@@ -53,53 +53,57 @@
             >
           </li>
         </ul>
-      </div>
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button
-          class="menu-toggle js-open-menu">
+
+        <button type="button" class="menu-btn js-open-menu">
           <svg width="40" height="40" class="mobmenu__icon">
-            <use href="./images/icons-defs.svg#mobmenu-cross"></use>
+            <use href="./images/icons-defs.svg#mobmenu"></use>
           </svg>
         </button>
-        <ul class="list mobmenu__nav">
-          <li class=" mobmenu__navitem">
-            <a href="" class="link mobmenu__navlink">Студия</a>
-          </li>
-          <li class=" mobmenu__navlitem">
-            <a href="" class="link mobmenu__navlink">Портфолио</a>
-          </li>
-          <li class=" mobmenu__navlitem">
-            <a href="" class="link mobmenu__navlink">Контакты</a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li  class=" mobmenu__navlitem">
-            <a href="" class="link mobmenu__call mobmenu__navlink">+38 096 111 11 11</a>
-          </li>
-          <li>
-            <a href="" class="link mobmenu__mail">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="list mobmenu__social">
-          <li>
-            <a href="" class="link mobmenu__soclink">Instagram </a>
-          </li>
-          <li>
-            <a href="" class="link mobmenu__soclink">Twitter</a>
-          </li>
-          <li>
-            <a href="" class="link mobmenu__soclink">Facebook</a>
-          </li>
-          <li>
-            <a href="" class="link mobmenu__soclink">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" class="mobmenu__icon">
+              <use href="./images/icons-defs.svg#mobmenu-cross"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Студия</a>
+            </li>
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Портфолио</a>
+            </li>
+            <li class="mobmenu__nav">
+              <a href="" class="link mobmenu__navitem">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list mobmenu__media">
+            <li class="mobmenu__nav">
+              <a href="tel:+380991111111" class="link mobmenu__call"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mobmenu__mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobmenu__soclink">
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Instagram</a>
+            </li>
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Twitter</a>
+            </li>
+            <li class="soclink__navlink">
+              <a href="" class="link mobmenu__navlink">Facebook</a>
+            </li>
+            <li class="last">
+              <a href="" class="link mobmenu__navlink">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button type="button" class="menu-btn js-close-menu">
-        <svg width="40" height="40" class="mobmenu__icon">
-          <use href="./images/icons-defs.svg#mobmenu"></use>
-        </svg>
-      </button>
     </header>
     <main>
       <section class="hero hero__section">
@@ -258,15 +262,18 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list product__list">
             <li class="product__item">
-              <div class="product__card">
-                <img src="./images/product/img1.jpg" alt="Кодинг" width="370" />
+              <div class="product__card">                
+                <img srcset="./images/product/product1_L@1x_result.jpg 1x, 
+                ./images/product/product1_L@2x_result.jpg 2x" 
+                src="./images/product/product1_L@1x_result.jpg" alt="Кодинг" width="370" />
                 <p class="product__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="product__item">
               <div class="product__card">
-                <img
-                  src="./images/product/img2.jpg"
+                <img srcset="./images/product/product2_L@1x_result.jpg 1x, 
+                ./images/product/product2_L@2x_result.jpg 2x"
+                  src="./images/product/product2_L@1x_result.jpg"
                   alt="Оформление"
                   width="370"
                 />
@@ -275,7 +282,9 @@
             </li>
             <li class="product__item">
               <div class="product__card">
-                <img src="./images/product/img3.jpg" alt="Дизайн" width="370" />
+                <img srcset="./images/product/product3_L@1x_result.jpg 1x, 
+                ./images/product/product3_L@2x_result.jpg 2x"
+                  src="./images/product/product3_L@1x_result.jpg" alt="Дизайн" width="370" />
                 <p class="product__description">Дизайнерские решения</p>
               </div>
             </li>
@@ -287,11 +296,12 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./images/team/img4.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/team/specialist1_L@1x_result.jpg 1x, images/team/specialist1_L@2x_result.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="images/team/specialist1_M@1x_result.jpg 1x, images/team/specialist1_M@2x_result.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="images/team/specialist1_S@1x_result.jpg 1x, images/team/specialist1_S@2x_result.jpg 2x" />
+                <img src="images/team/specialist1_S@1x_result.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="specialist">
                 <h3 class="specialist__name">Игорь Демьяненко</h3>
                 <p class="specialist__position">Product Designer</p>
@@ -352,11 +362,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img5.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/team/specialist2_L@1x_result.jpg 1x, images/team/specialist2_L@2x_result.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="images/team/specialist2_M@1x_result.jpg 1x, images/team/specialist2_M@2x_result.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="images/team/specialist2_S@1x_result.jpg 1x, images/team/specialist2_S@2x_result.jpg 2x" />
+                <img src="images/team/specialist2_S@1x_result.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="specialist">
                 <h3 class="specialist__name">Ольга Репина</h3>
                 <p class="specialist__position">Frontend Developer</p>
@@ -417,11 +428,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img6.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/team/specialist3_L@1x_result.jpg 1x, images/team/specialist3_L@2x_result.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="images/team/specialist3_M@1x_result.jpg 1x, images/team/specialist3_M@2x_result.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="images/team/specialist3_S@1x_result.jpg 1x, images/team/specialist3_S@2x_result.jpg 2x" />
+                <img src="images/team/specialist3_S@1x_result.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="specialist">
                 <h3 class="specialist__name">Николай Тарасов</h3>
                 <p class="specialist__position">Marketing</p>
@@ -482,11 +494,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/img7.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/team/specialist4_L@1x_result.jpg 1x, images/team/specialist4_L@2x_result.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="images/team/specialist4_M@1x_result.jpg 1x, images/team/specialist4_M@2x_result.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="images/team/specialist4_S@1x_result.jpg 1x, images/team/specialist4_S@2x_result.jpg 2x" />
+                <img src="images/team/specialist4_S@1x_result.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="specialist">
                 <h3 class="specialist__name">Михаил Ермаков</h3>
                 <p class="specialist__position">UI Designer</p>

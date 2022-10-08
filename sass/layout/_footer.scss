@@ -2,9 +2,18 @@
     background-color: var(--hero-background-color);
 }
 .footer__box{
+    text-align: center;
     padding-top: 60px;    
     padding-bottom: 60px;
     line-height: 1.71;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 165px;
+    }
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -74,8 +83,8 @@
 
 .newsletter__box{
     align-items: center;
-    gap: 12px;
     margin-top: 20px;
+    gap: 12px;
     
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -83,8 +92,7 @@
         justify-content: center;
     }
 }
-.newsletter__label{
-    width: 358px;
+.newsletter__label{    
     height: 50px;
     padding: 15px;
     font-weight: 400;
@@ -94,6 +102,19 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--hero-background-color);
+
+    @media screen and (max-width: 479.5px) {
+        max-width: 358px;
+    }
+
+    @media screen and (min-width:480px) {
+        display: inline-block;
+        width: 450px;        
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 .newsletter__input{
     color: var(--footer-contacts-color);
@@ -105,6 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -112,6 +134,11 @@
     border-radius: 4px;
     background-color: var(--accent-secondary-color);
     cursor: pointer;
+
+        @media screen and (max-width: 1199.5px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
     
     &:hover,
     &:focus{
